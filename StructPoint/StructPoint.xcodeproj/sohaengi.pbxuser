@@ -1,0 +1,177 @@
+// !$*UTF8*$!
+{
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 549FFE5B0B7B7C070029E58A /* StructPoint */;
+		activeTarget = 8DD76FA90486AB0100D96B5E /* StructPoint */;
+		breakpoints = (
+			549FFE6B0B7B7C6A0029E58A /* main.c:12 */,
+			549FFEA20B7B7D170029E58A /* main.c:11 */,
+		);
+		breakpointsGroup = 549FFEA70B7B7D3A0029E58A /* XCBreakpointsBucket */;
+		codeSenseManager = 549FFE600B7B7C250029E58A /* Code sense */;
+		executables = (
+			549FFE5B0B7B7C070029E58A /* StructPoint */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					243,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 194799249;
+			PBXWorkspaceStateSaveDate = 194799249;
+		};
+		perUserProjectItems = {
+			549FFEAF0B7B7F010029E58A /* PBXTextBookmark */ = 549FFEAF0B7B7F010029E58A /* PBXTextBookmark */;
+			54F3BCFD0B9C669E0097521F /* PBXTextBookmark */ = 54F3BCFD0B9C669E0097521F /* PBXTextBookmark */;
+		};
+		sourceControlManager = 549FFE5F0B7B7C250029E58A /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	08FB7796FE84155DC02AAC07 /* main.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {758, 598}}";
+			sepNavSelRange = "{159, 0}";
+			sepNavVisRect = "{{0, 0}, {758, 598}}";
+			sepNavWindowFrame = "{{15, 46}, {803, 727}}";
+		};
+	};
+	549FFE5B0B7B7C070029E58A /* StructPoint */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = StructPoint;
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	549FFE5F0B7B7C250029E58A /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	549FFE600B7B7C250029E58A /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	549FFE6B0B7B7C6A0029E58A /* main.c:12 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		delayBeforeContinue = 0;
+		fileReference = 08FB7796FE84155DC02AAC07 /* main.c */;
+		functionName = "main()";
+		hitCount = 1;
+		lineNumber = 12;
+		location = main.ob;
+		modificationTime = 192642332.112526;
+		state = 1;
+	};
+	549FFEA20B7B7D170029E58A /* main.c:11 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+			549FFEA50B7B7D3A0029E58A /* XCBreakpointLogAction */,
+		);
+		breakpointStyle = 0;
+		comments = "Speak breakpoint and hit count and auto-continue.";
+		condition = 549FFEA60B7B7D3A0029E58A /* XCGDBBreakpointCondition */;
+		continueAfterActions = 1;
+		delayBeforeContinue = 0;
+		fileReference = 08FB7796FE84155DC02AAC07 /* main.c */;
+		functionName = "main()";
+		hitCount = 1;
+		lineNumber = 11;
+		location = main.ob;
+		modificationTime = 192642332.086364;
+		state = 1;
+	};
+	549FFEA50B7B7D3A0029E58A /* XCBreakpointLogAction */ = {
+		isa = XCBreakpointLogAction;
+		fallbackIsa = XCBreakpointAction;
+		logMessage = 0;
+		message = "Breakpoints '%B' hit %H times.";
+		speakMessage = 1;
+		useDebuggerSideImplementation = 0;
+	};
+	549FFEA60B7B7D3A0029E58A /* XCGDBBreakpointCondition */ = {
+		isa = XCGDBBreakpointCondition;
+		conditionString = "";
+	};
+	549FFEA70B7B7D3A0029E58A /* XCBreakpointsBucket */ = {
+		isa = XCBreakpointsBucket;
+		name = "Project Breakpoints";
+		objects = (
+			549FFE6B0B7B7C6A0029E58A /* main.c:12 */,
+			549FFEA20B7B7D170029E58A /* main.c:11 */,
+		);
+	};
+	549FFEAF0B7B7F010029E58A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* main.c */;
+		name = "main.c: 10";
+		rLen = 0;
+		rLoc = 127;
+		rType = 0;
+		vrLen = 159;
+		vrLoc = 0;
+	};
+	54F3BCFD0B9C669E0097521F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* main.c */;
+		name = "main.c: 14";
+		rLen = 0;
+		rLoc = 159;
+		rType = 0;
+		vrLen = 159;
+		vrLoc = 0;
+	};
+	8DD76FA90486AB0100D96B5E /* StructPoint */ = {
+		activeExec = 0;
+		executables = (
+			549FFE5B0B7B7C070029E58A /* StructPoint */,
+		);
+	};
+}

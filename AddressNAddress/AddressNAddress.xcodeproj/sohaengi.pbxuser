@@ -1,0 +1,234 @@
+// !$*UTF8*$!
+{
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 54A00BF20B78B72800520612 /* AddressNAddress */;
+		activeTarget = 8DD76FA90486AB0100D96B5E /* AddressNAddress */;
+		breakpoints = (
+			54A00C090B78B7BA00520612 /* main.c:4 */,
+			54A00C0B0B78B7BB00520612 /* main.c:5 */,
+			54A00C0D0B78B7BC00520612 /* main.c:7 */,
+			54A00C0F0B78B7BC00520612 /* main.c:8 */,
+			54A00C110B78B7BD00520612 /* main.c:9 */,
+			54A00C130B78B7BE00520612 /* main.c:10 */,
+			54A00C150B78B7BE00520612 /* main.c:11 */,
+		);
+		codeSenseManager = 54A00BF70B78B74600520612 /* Code sense */;
+		executables = (
+			54A00BF20B78B72800520612 /* AddressNAddress */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					243,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 194798166;
+			PBXWorkspaceStateSaveDate = 194798166;
+		};
+		perUserProjectItems = {
+			54A00C180B78B91100520612 /* PBXTextBookmark */ = 54A00C180B78B91100520612 /* PBXTextBookmark */;
+			54F3BA050B9C626F0097521F /* PBXTextBookmark */ = 54F3BA050B9C626F0097521F /* PBXTextBookmark */;
+		};
+		sourceControlManager = 54A00BF60B78B74600520612 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	08FB7796FE84155DC02AAC07 /* main.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {741, 603}}";
+			sepNavSelRange = "{320, 0}";
+			sepNavVisRect = "{{0, 0}, {741, 603}}";
+			sepNavWindowFrame = "{{15, 46}, {786, 732}}";
+		};
+	};
+	54A00BF20B78B72800520612 /* AddressNAddress */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = AddressNAddress;
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+			"p-char *-main" = 1;
+		};
+	};
+	54A00BF60B78B74600520612 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	54A00BF70B78B74600520612 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	54A00C090B78B7BA00520612 /* main.c:4 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		delayBeforeContinue = 0;
+		fileReference = 08FB7796FE84155DC02AAC07 /* main.c */;
+		functionName = "main()";
+		hitCount = 1;
+		lineNumber = 4;
+		location = main.ob;
+		modificationTime = 192460741.986713;
+		state = 1;
+	};
+	54A00C0B0B78B7BB00520612 /* main.c:5 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		delayBeforeContinue = 0;
+		fileReference = 08FB7796FE84155DC02AAC07 /* main.c */;
+		functionName = "main()";
+		hitCount = 1;
+		lineNumber = 5;
+		location = main.ob;
+		modificationTime = 192460760.517597;
+		state = 1;
+	};
+	54A00C0D0B78B7BC00520612 /* main.c:7 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		delayBeforeContinue = 0;
+		fileReference = 08FB7796FE84155DC02AAC07 /* main.c */;
+		functionName = "main()";
+		hitCount = 1;
+		lineNumber = 7;
+		location = main.ob;
+		modificationTime = 192460762.798242;
+		state = 1;
+	};
+	54A00C0F0B78B7BC00520612 /* main.c:8 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		delayBeforeContinue = 0;
+		fileReference = 08FB7796FE84155DC02AAC07 /* main.c */;
+		functionName = "main()";
+		hitCount = 1;
+		lineNumber = 8;
+		location = main.ob;
+		modificationTime = 192460805.640684;
+		state = 1;
+	};
+	54A00C110B78B7BD00520612 /* main.c:9 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		delayBeforeContinue = 0;
+		fileReference = 08FB7796FE84155DC02AAC07 /* main.c */;
+		functionName = "main()";
+		hitCount = 1;
+		lineNumber = 9;
+		location = main.ob;
+		modificationTime = 192460816.579492;
+		state = 1;
+	};
+	54A00C130B78B7BE00520612 /* main.c:10 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		delayBeforeContinue = 0;
+		fileReference = 08FB7796FE84155DC02AAC07 /* main.c */;
+		functionName = "main()";
+		hitCount = 1;
+		lineNumber = 10;
+		location = main.ob;
+		modificationTime = 192460827.514785;
+		state = 1;
+	};
+	54A00C150B78B7BE00520612 /* main.c:11 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		delayBeforeContinue = 0;
+		fileReference = 08FB7796FE84155DC02AAC07 /* main.c */;
+		functionName = "main()";
+		hitCount = 1;
+		lineNumber = 11;
+		location = main.ob;
+		modificationTime = 192460741.96915;
+		state = 1;
+	};
+	54A00C180B78B91100520612 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* main.c */;
+		name = "main.c: 4";
+		rLen = 0;
+		rLoc = 82;
+		rType = 0;
+		vrLen = 451;
+		vrLoc = 0;
+	};
+	54F3BA050B9C626F0097521F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* main.c */;
+		name = "main.c: 19";
+		rLen = 0;
+		rLoc = 320;
+		rType = 0;
+		vrLen = 508;
+		vrLoc = 0;
+	};
+	8DD76FA90486AB0100D96B5E /* AddressNAddress */ = {
+		activeExec = 0;
+		executables = (
+			54A00BF20B78B72800520612 /* AddressNAddress */,
+		);
+	};
+}

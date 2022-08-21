@@ -1,0 +1,143 @@
+// !$*UTF8*$!
+{
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 54DABC980B7AAD7E0068EB1E /* CalcAddress */;
+		activeTarget = 8DD76FA90486AB0100D96B5E /* CalcAddress */;
+		codeSenseManager = 54DABC9D0B7AAD9D0068EB1E /* Code sense */;
+		executables = (
+			54DABC980B7AAD7E0068EB1E /* CalcAddress */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXErrorsWarningsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXErrorsWarningsDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					300,
+					133.2085,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXErrorsWarningsDataSource_TypeID,
+					PBXErrorsWarningsDataSource_MessageID,
+					PBXErrorsWarningsDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					131,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					243,
+					20,
+					48.1626,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 194798330;
+			PBXWorkspaceStateSaveDate = 194798330;
+		};
+		perUserProjectItems = {
+			54DABCD70B7AF80E0068EB1E /* PBXTextBookmark */ = 54DABCD70B7AF80E0068EB1E /* PBXTextBookmark */;
+			54F3BA4F0B9C63120097521F /* PBXTextBookmark */ = 54F3BA4F0B9C63120097521F /* PBXTextBookmark */;
+		};
+		sourceControlManager = 54DABC9C0B7AAD9D0068EB1E /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	08FB7796FE84155DC02AAC07 /* main.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {876, 598}}";
+			sepNavSelRange = "{407, 0}";
+			sepNavVisRect = "{{0, 0}, {876, 598}}";
+			sepNavWindowFrame = "{{15, 46}, {921, 727}}";
+		};
+	};
+	54DABC980B7AAD7E0068EB1E /* CalcAddress */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = CalcAddress;
+		sourceDirectories = (
+		);
+	};
+	54DABC9C0B7AAD9D0068EB1E /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	54DABC9D0B7AAD9D0068EB1E /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	54DABCD70B7AF80E0068EB1E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* main.c */;
+		name = "main.c: main";
+		rLen = 0;
+		rLoc = 106;
+		rType = 0;
+		vrLen = 395;
+		vrLoc = 0;
+	};
+	54F3BA4F0B9C63120097521F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* main.c */;
+		name = "main.c: 34";
+		rLen = 0;
+		rLoc = 407;
+		rType = 0;
+		vrLen = 407;
+		vrLoc = 0;
+	};
+	8DD76FA90486AB0100D96B5E /* CalcAddress */ = {
+		activeExec = 0;
+		executables = (
+			54DABC980B7AAD7E0068EB1E /* CalcAddress */,
+		);
+	};
+}

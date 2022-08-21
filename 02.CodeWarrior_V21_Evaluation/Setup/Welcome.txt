@@ -1,0 +1,141 @@
+Welcome To CodeWarrior(R) Development Studio, ARM ISA Edition for Board Bring Up v2.1
+=====================================================================================
+
+This is the release of CodeWarrior Development Tools made specifically for
+ARM embedded systems software development.
+
+The CodeWarrior Tools
+
+The Integrated Development Environment (IDE) is the center of
+CodeWarrior software development. This powerful IDE combines:
+
+* a sophisticated project manager
+* an intuitive source-code editor and integrated debugger
+* a multi-language source code browser
+* Metrowerks code generation tools for ARM
+
+For this release, Metrowerks presents CodeWarrior IDE Version 5.5.
+
+Project Manager and Build System
+=======================================================================================
+·Project manager with easy-to-use GUI
+·Holds source files and libraries, manages dependencies and stores compiler, linker
+ and other preferences using a project paradigm
+·Multi-threaded to allow to work on one project while compiling another
+·Support multiple targets per project - use the same project to build different versions
+ of code, such as debug and release builds
+·Keeps constant track of files, code size, file link order, and debugging options
+
+Editor and Code Navigation System
+=======================================================================================
+·Metrowerks award-winning graphical Integrated Development Environment (IDE)
+·Language and context-sensitive editor
+·Flexible enough to support third-party editors, debuggers, and source code control
+·Pop-up menus for quick navigation and access to functions and headers for each project
+·Drag-and-drop editing in IDE for source code
+·Support for error management directly in error message window
+·Revolutionary code navigation system with integrated debugging
+·View classes, methods, member functions, data members and other 
+ structures in an organized manner
+·Graphically display hierarchy of C++/EC++ classes for a clearer view of class relationships
+.Code Completion and Code Formatting support
+
+Comparison Engines
+========================================================================================
+·Compare two text files (or recursively compare two folders), graphically display the file
+ differences, and apply text changes
+ 
+ 
+ Compilers, Linkers, Assemblers and Libraries
+======================================================================================
+·Stand-alone/function-level/inlining assembler and disassembler
+·ANSI compliant C compiler, ANSI/ISO compliant C++ compiler
+·Optimizing C/C++ compiler 
+·Languages Supported: Assembly, C and C++ 
+
+·Supports both little- and big-endian architectures
+·Software FPU emulation libraries
+·ARM ISA and Thumb Architecture Extensions Support
+
+Debugger
+========================================================================================
+· Graphical source/assembly or mixed-mode debugging
+· Support for conditional breakpoints, data watchpoints and expression evaluation
+· Ability to display and edit variable values, registers, and memory range
+· Run control for executing lines of code or assembly instructions at any location
+· MetroTRK debug monitor included, with source, for many common reference boards
+· Supports Embedded ICE Module via ARM Multi-ICE
+· Supports AMC CodeTap for XScale
+· Supports KMC Partner J
+· Target Connection: Debugger supports MetroTRK, RDI, KMC and AMC Protocols
+. Simple Profiler support
+. Flash  Programmer and Hardware Diagnostics Support
+· Support for preferred target platforms:
+
+	Motorola i.MX1/i.MXL SoC (regular as well as lite boards)
+	Intel XScale, PXA-250 Cotulla board
+	Intel XScale, PXA-255 board
+	Intel XScale, IQ80321 board
+	ARM Integrator 920T/926EJS
+	ARM Evaluator7T
+	Neptune board
+	Windsor MAC7100 Evaluation Board
+	Virtio Softboard (board simulator) for:
+		- Generic ARM7 and ARM 9
+		- XScale PXA250
+		- OMAP 1510
+	i.MX21 (tahiti) board
+	i.MX1 v2.0 board
+	ATMEL board
+
+· IDE/Debugger Works with hyperthreading architecture
+· Integrated CVS plugin
+· Integrated PC Lint plugin
+· Integrated adapters for ARM RealView Compilation Tools . 
+  Debugger works with RVCT as well as Metrowrks compilation 
+  tools in a single layout. 
+  Refer <CodeWarrior>\Other Metrowerks Tools\RVCT_Adapters\readme.txt
+  for detailed instructions in this regard
+
+=========================================================================================
+Visit our product page at:
+
+    <http://www.metrowerks.com/embedded/>
+
+By the way, CodeWarrior Development Tools for ARM Embedded Systems isn't the
+only CodeWarrior product. While you're at our web page, see the main
+page for more information about all CodeWarrior packages for software
+development.
+
+    <http://www.metrowerks.com/>
+
+
+We Listen, We Act
+
+Our mission is to develop and support reliable, leading edge tools
+technologies that provides you, our customer, with a competitive
+advantage in bringing to market successful products.
+
+By responding to your needs with regular releases, by backing up your
+hard work with free 90 day new user support, and free factory updates
+from  our web site, by ensuring your satisfaction with a 30-day,
+money-back  guarantee, we stand behind CodeWarrior to contribute to
+your success.
+
+You can contact us through e-mail, newsgroups or via the web. You
+can also reach us by voice or fax. For details on contacting Metrowerks, 
+browse our web page, or see the front of any CodeWarrior manual.
+
+I welcome and encourage comments. You can contact me directly by
+sending e-mail to prez@metrowerks.com.
+
+Drop us a line to let us know how we're doing. We'll listen and we'll
+act.
+
+Matthew Harris
+President & CEO
+Metrowerks, Inc.
+
+Metrowerks, the Metrowerks logo, CodeWarrior, and CodeWarrior Geekware
+are registered trademarks of Metrowerks Inc. All other brands and 
+product names may be trademarks or registered trademarks of their respective holders.

@@ -1,0 +1,105 @@
+// !$*UTF8*$!
+{
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 54D559B10B7BFC0C009E31C4 /* CExtension */;
+		activeTarget = 8DD76FA90486AB0100D96B5E /* CExtension */;
+		breakpointsGroup = 54D559C70B7C07F6009E31C4 /* XCBreakpointsBucket */;
+		codeSenseManager = 54D559B50B7BFC2C009E31C4 /* Code sense */;
+		executables = (
+			54D559B10B7BFC0C009E31C4 /* CExtension */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					243,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 194798384;
+			PBXWorkspaceStateSaveDate = 194798384;
+		};
+		perUserProjectItems = {
+			54D559B60B7BFD34009E31C4 /* PBXBookmark */ = 54D559B60B7BFD34009E31C4 /* PBXBookmark */;
+		};
+		sourceControlManager = 54D559B40B7BFC2C009E31C4 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	08FB7796FE84155DC02AAC07 /* main.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {828, 403}}";
+			sepNavSelRange = "{83, 0}";
+			sepNavVisRect = "{{0, 0}, {828, 403}}";
+			sepNavWindowFrame = "{{15, 46}, {803, 727}}";
+		};
+	};
+	54D559B10B7BFC0C009E31C4 /* CExtension */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = CExtension;
+		sourceDirectories = (
+		);
+	};
+	54D559B40B7BFC2C009E31C4 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	54D559B50B7BFC2C009E31C4 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	54D559B60B7BFD34009E31C4 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* main.c */;
+	};
+	54D559C70B7C07F6009E31C4 /* XCBreakpointsBucket */ = {
+		isa = XCBreakpointsBucket;
+		name = "Project Breakpoints";
+		objects = (
+		);
+	};
+	8DD76FA90486AB0100D96B5E /* CExtension */ = {
+		activeExec = 0;
+		executables = (
+			54D559B10B7BFC0C009E31C4 /* CExtension */,
+		);
+	};
+}

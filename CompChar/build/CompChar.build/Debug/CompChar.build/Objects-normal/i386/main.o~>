@@ -1,0 +1,4 @@
+/이소행개인폴더/임베디드관련/임베디드C과정/CompChar/main.c: In function 'main':
+/이소행개인폴더/임베디드관련/임베디드C과정/CompChar/main.c:10: warning: comparison between pointer and integer
+/이소행개인폴더/임베디드관련/임베디드C과정/CompChar/main.c: At top level:
+/이소행개인폴더/임베디드관련/임베디드C과정/CompChar/main.c:17: error: parse error at end of input

@@ -1,0 +1,4 @@
+/이소행개인폴더/임베디드관련/임베디드C과정/FT/main.c: In function 'main':
+/이소행개인폴더/임베디드관련/임베디드C과정/FT/main.c:7: warning: comparison is always false due to limited range of data type
+/이소행개인폴더/임베디드관련/임베디드C과정/FT/main.c: At top level:
+/이소행개인폴더/임베디드관련/임베디드C과정/FT/main.c:14: error: parse error at end of input

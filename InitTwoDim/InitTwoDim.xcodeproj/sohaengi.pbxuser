@@ -1,0 +1,141 @@
+// !$*UTF8*$!
+{
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 549FFEB30B7B7F0D0029E58A /* InitTwoDim */;
+		activeTarget = 8DD76FA90486AB0100D96B5E /* InitTwoDim */;
+		codeSenseManager = 549FFEBA0B7B7F2B0029E58A /* Code sense */;
+		executables = (
+			549FFEB30B7B7F0D0029E58A /* InitTwoDim */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXErrorsWarningsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXErrorsWarningsDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					300,
+					45.2085,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXErrorsWarningsDataSource_TypeID,
+					PBXErrorsWarningsDataSource_MessageID,
+					PBXErrorsWarningsDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					129,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFindDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFindDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					120,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFindDataSource_MessageID,
+					PBXFindDataSource_LocationID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 194798819;
+			PBXWorkspaceStateSaveDate = 194798819;
+		};
+		perUserProjectItems = {
+			54F3BBC00B9C65130097521F /* PBXTextBookmark */ = 54F3BBC00B9C65130097521F /* PBXTextBookmark */;
+			54F3BBC10B9C65130097521F /* PBXTextBookmark */ = 54F3BBC10B9C65130097521F /* PBXTextBookmark */;
+		};
+		sourceControlManager = 549FFEB90B7B7F2B0029E58A /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	08FB7796FE84155DC02AAC07 /* main.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {764, 546}}";
+			sepNavSelRange = "{313, 0}";
+			sepNavVisRect = "{{0, 0}, {764, 398}}";
+			sepNavWindowFrame = "{{61, 204}, {809, 527}}";
+		};
+	};
+	549FFEB30B7B7F0D0029E58A /* InitTwoDim */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = InitTwoDim;
+		sourceDirectories = (
+		);
+	};
+	549FFEB90B7B7F2B0029E58A /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	549FFEBA0B7B7F2B0029E58A /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	54F3BBC00B9C65130097521F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* main.c */;
+		name = "main.c: 39";
+		rLen = 0;
+		rLoc = 640;
+		rType = 0;
+		vrLen = 368;
+		vrLoc = 272;
+	};
+	54F3BBC10B9C65130097521F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* main.c */;
+		name = "main.c: 12";
+		rLen = 0;
+		rLoc = 313;
+		rType = 0;
+		vrLen = 527;
+		vrLoc = 0;
+	};
+	8DD76FA90486AB0100D96B5E /* InitTwoDim */ = {
+		activeExec = 0;
+		executables = (
+			549FFEB30B7B7F0D0029E58A /* InitTwoDim */,
+		);
+	};
+}

@@ -1,0 +1,101 @@
+===================================================================================
+Developer Notes for 
+CodeWarrior® Development Studio, ARM ISA Edition for Board Bring Up v2.1
+===================================================================================
+# $RCSfile: Developer_Notes\040-\040ARM_Tools.txt,v $
+# $Revision: 1.15 $
+# $Date: 2004/07/08 14:05:54 $
+========================================================================
+
+
+This is a collection of important information concerning last-minute 
+changes and other topics that deserve special attention. Please read these 
+notes carefully, they supersede the manuals and other documentation.
+
+==========================
+Changes since 2.0
+==========================
+
+·	Improved performance of Metrowerks ARM Compilation tools
+
+·	Reduced size MSL C libraries added. Use of these libraires leads 
+	to 20%-30% reduction in code size. 
+	Refer "HowToUseSizeReducedLibraries.txt" located under
+	"Release Notes\ARM_EABI\Debugger_Notes"for further information on this
+		
+·	Added Flash programmer support for internal Flash (CFM driver) of MAC7111 (Windsor board)
+
+·	Abatron BDI-2000/1000 HTI support with RDI protocol
+
+·	All plugins updated to latest builds of IDE 5.6
+
+·	Layout folder names are changed with respect to the product parity requirements.
+	-->	All initialization files are now located at "<Layout>\ARM_EABI_Support\Initialization_Files".
+	--> Initialization file path in "ARM Debugger Setting" Preference panel is compiler relative
+	--> CodeWarrior_Example folder is (Example)
+
+·	Example/Stationery for creating real bootable code (ROM Startup code) for all supported boards
+ 
+·	PIC/PID support with in-built Flash drivers
+
+·	Stationery Wizard is upgraded to include real ROM stationery and various other fixes.
+	See "Readme_Stationery_Wizard.txt" for more updates on this.
+	
+·	Enhanced Flash Programmer with Blank check and checksum features
+
+·	Improved performance of thumb debugging using MetroTRK protocol 
+	
+
+========================
+Installation information
+========================
+-  If the machine where this product is installed has a earlier versions of 
+   CodeWarrior or for other CodeWarrior products, it is recommended that you
+   install it in separate directory. Do not do merge installation. 
+    
+    Also remove: " Metrowerks" folder found under  
+    "Drive:\Documents and Settings\your name \My Documents" before installation.
+
+======================
+Additional information
+======================
+- To debug using MetroTRK with i.MX1, i.MX21, Evaluator7T and IQ80321, refer 
+  readme.txt about MetroTRK usage. 
+  This readme is located at:
+  <layout>\ARM_EABI_Tools\MetroTRK\Processor\arm\board\motorola
+  <layout>\ARM_EABI_Tools\MetroTRK\Processor\arm\board\arm\evaluator_7t 
+  <layout>\ARM_EABI_Tools\MetroTRK\Processor\arm\board\motorola\DragonballMX1 
+  <layout>\ARM_EABI_Tools\MetroTRK\Processor\arm\board\motorola\iMX21 
+  <layout>\ARM_EABI_Tools\MetroTRK\Processor\arm\board\Intel\IQ80321 
+
+- To make use of Flash Programmer feature for various target boards, refer 
+  readme.txt, located as follows:
+  <layout>\Bin\Plugins\Support\Flash_Programmer\ARM_EABI
+
+- Refer to the IDE release notes in the "Release Notes" folder.
+- Refer to the  Compiler release notes in the "Release notes/ARM_EABI" folder.
+- Refer to the Debugger Release Notes in the "Release notes/ARM_EABI" folder.
+- Refer "Release Notes\ARM_EABI\Debugger_Notes\Readme_FAQ.txt" for commonly asked
+  question and their resolution.
+
+
+========================================
+Known Issues
+========================================
+Refer respective components release notes for known issues.
+
+
+==========================================
+Contacting Metrowerks
+==========================================
+
+Use the forms found in the Release Notes folder on the CD to submit bugs.
+Use the email address below for submitting bugs, technical support and suggestions:
+
+   Technical Support: support@metrowerks.com
+   Report Bugs:       support@metrowerks.com
+   Suggestions:       support@metrowerks.com
+
+See the 'CodeWarrior on the Nets' document in the Release Notes 
+folder for contact information, including a list of Internet 
+newsgroups, online services, and factory update sites.

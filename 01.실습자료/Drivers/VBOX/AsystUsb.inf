@@ -1,0 +1,146 @@
+; **************************************************************
+; Copyright 1998-2004 Asyst Electronic, Inc
+; Name:        ASYSTUSB.INF
+; Description: Asyst Electronic USB device driver installation
+;              for iSYSTEM devices with USB interfaces
+; Vendor:      Asyst Electronic, Inc.
+; **************************************************************
+
+
+[Version]
+Signature         = "$CHICAGO$"
+Class             = %ASYST.DeviceClassName%
+ClassGUID         = {00294380-BBA1-11d5-A7B8-0000F81A2088}
+Provider          = %ASYST.Provider%
+CatalogFile       = asystusb.cat
+CatalogFile.ntx86 = asystusb.cat
+DriverVer         = %ASYST.DriverVer%
+
+
+[SourceDisksNames]
+1 = %ASYST.InstallDisk%,,,
+
+[SourceDisksFiles]
+ASYSTUSB.SYS = 1
+ASY2KUSB.SYS = 1
+
+[DestinationDirs]
+AsystUsbDriver.Files.Sys.NT = 10, System32\Drivers
+AsystUsbDriver.Files.Sys    = 10, System32\Drivers
+
+
+; ************************ Table of contents ***************************
+
+[Manufacturer]
+%ASYST.Manufacturer% = ASYSTElectronic
+
+[ASYSTElectronic]
+%USB\VID_06F9.Desc%          = ASYSTUSB.Device, USB\VID_06F9
+%USB\VID_06F9&PID_0128.Desc% = ASYSTUSB.Device, USB\VID_06F9&PID_0128
+%USB\VID_06F9&PID_1000.Desc% = ASYSTUSB.Device, USB\VID_06F9&PID_1000
+%USB\VID_06F9&PID_2000.Desc% = ASYSTUSB.Device, USB\VID_06F9&PID_2000
+%USB\VID_06F9&PID_3000.Desc% = ASYSTUSB.Device, USB\VID_06F9&PID_3000
+%USB\VID_06F9&PID_3010.Desc% = ASYSTUSB.Device, USB\VID_06F9&PID_3010
+%USB\VID_06F9&PID_4000.Desc% = ASYSTUSB.Device, USB\VID_06F9&PID_4000
+%USB\VID_06F9&PID_4001.Desc% = ASYSTUSB.Device, USB\VID_06F9&PID_4001
+%USB\VID_06F9&PID_D001.Desc% = ASYSTUSB.Device, USB\VID_06F9&PID_D001
+%USB\VID_06F9&PID_D002.Desc% = ASYSTUSB.Device, USB\VID_06F9&PID_D002
+
+
+; *********************** All iSYSTEM Devices **************************
+; For each supported operating system there is one universal WDM USB 
+; driver binary for all iSYSTEM devices.
+
+[ControlFlags]
+;
+; USB devices are fully PnP capable and need no manual intervention
+; for instalation
+;
+ExcludeFromSelect = *
+
+
+; ********************** Windows 2000/XP specific *************************
+
+[ClassInstall32]
+AddReg = AsystClass.AddReg.NT
+
+[AsystClass.AddReg.NT]
+HKR,,,,%ASYST.DeviceClassName%
+HKR,,NoInstallClass,,1
+HKR,,SilentInstall,,1
+;HKR,,Icon,,-20
+;HKR,,SilentInstallNotify,,1
+
+[ASYSTUSB.Device.NT]
+AddReg    = AsystUsbDriver.AddReg.NT
+CopyFiles = AsystUsbDriver.Files.Sys.NT
+DriverVer = %ASYST.DriverVer%
+
+[ASYSTUSB.Device.NT.Services]
+AddService = ASYSTUSB, 0x00000002, ASYSTUSB.AddService
+
+[ASYSTUSB.AddService]
+DisplayName    = %ASYSTUSB.ServiceDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\SYSTEM32\DRIVERS\ASY2KUSB.SYS
+LoadOrderGroup = Base
+
+[AsystUsbDriver.AddReg.NT]
+HKR,,DevLoader,,*NTKERN
+HKR,,NTMPDriver,,ASY2KUSB.SYS
+
+[AsystUsbDriver.Files.Sys.NT]
+ASY2KUSB.SYS                        ; WDM driver binary for Win2000/WinXP
+
+
+; *********************** Windows 98 specific **************************
+
+[ClassInstall]
+AddReg = AsystClass.AddReg
+
+[AsystClass.AddReg]
+HKR,,,,%ASYST.DeviceClassName%
+HKR,,NoInstallClass,,1
+HKR,,SilentInstall,,1
+;HKR,,Icon,,-20
+;HKR,,SilentInstallNotify,,1
+
+[ASYSTUSB.Device]
+AddReg    = AsystUsbDriver.AddReg
+CopyFiles = AsystUsbDriver.Files.Sys
+DriverVer = %ASYST.DriverVer%
+
+[AsystUsbDriver.AddReg]
+HKR,,DevLoader,,*NTKERN
+HKR,,NTMPDriver,,ASYSTUSB.SYS
+
+[AsystUsbDriver.Files.Sys]
+ASYSTUSB.SYS    ; WDM driver binary for Win98
+
+
+; ************************* Common strings *****************************
+
+[Strings]
+ASYST.Provider        = "Asyst Electronic, Inc."
+ASYST.DriverVer       = "01/07/2004,1.4.0.0"
+ASYST.Manufacturer    = "Asyst Electronic, Inc."
+ASYST.DeviceClassName = "iSYSTEM Development Tools"
+ASYST.InstallDisk     = "iSYSTEM USB Driver Installation Disk"
+
+ASYSTUSB.ServiceDesc  = "iSYSTEM USB Device Driver"
+
+USB\VID_06F9.Desc          = "iSYSTEM Development Tool"
+USB\VID_06F9&PID_0128.Desc = "iSYSTEM iLA128 Logic Analyzer"
+USB\VID_06F9&PID_1000.Desc = "iSYSTEM iC1000 Emulator"
+USB\VID_06F9&PID_2000.Desc = "iSYSTEM iC2000 Emulator"
+USB\VID_06F9&PID_3000.Desc = "iSYSTEM iC3000 Emulator"
+USB\VID_06F9&PID_3010.Desc = "iSYSTEM iC3000HS Emulator"
+USB\VID_06F9&PID_4000.Desc = "iSYSTEM iC4000 Emulator"
+USB\VID_06F9&PID_4001.Desc = "iSYSTEM iC2000 II Emulator"
+USB\VID_06F9&PID_D001.Desc = "iSYSTEM iTAGUSB"
+USB\VID_06F9&PID_D002.Desc = "iSYSTEM iDONGLE"
+
+
+; *************************** End of file ******************************

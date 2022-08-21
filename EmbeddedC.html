@@ -1,0 +1,622 @@
+<html><head><title>MDS아카데미 - 노동부지정 임베디드 솔루션 전문 교육 기관</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<style type="text/css">
+<!--
+@import url(/academy/css/main_style.css);
+@import url(/academy/css/style.css);
+
+//-->
+</style>
+<script language="javascript">
+<!--//
+//<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">//한글을 위한 설정
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+function check_email(email){
+ var pattern = /^(.+)@(.+)$/;
+ var atom = "\[^\\s\\(\\)<>#@,;:!\\\\\\\"\\.\\[\\]\]+";
+ var word="(" + atom + "|(\"[^\"]*\"))";
+ var user_pattern = new RegExp("^" + word + "(\\." + word + ")*$");
+ var ip_pattern = /^\[(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})\]$/;
+ var domain_pattern = new RegExp("^" + atom + "(\\." + atom +")*$");
+
+ var arr = email.match(pattern);
+ if (!arr) return false;
+ if (!arr[1].match(user_pattern)) return false;
+
+ var ip = arr[2].match(ip_pattern);
+ if (ip) {
+	for (var i=1; i<5; i++) if (ip[i] > 255) return false;
+ }
+ else {
+	if (!arr[2].match(domain_pattern)) return false;
+	var domain = arr[2].match(new RegExp(atom,"g"));
+	if (domain.length<2) return false;
+	if (domain[domain.length-1].length<2 || domain[domain.length-1].length>3)
+		return false;
+ }
+ return true; 
+}
+
+function select_go( d_id ){
+	if( d_id )
+		location.href=d_id;
+}
+
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+
+function open_print(loc){
+	window.open('print_location.html?loc='+loc,'printwindow','scrollbars=yes,left=0,top=0,height=500,width=735');
+}
+-->
+</script><script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script></head><body onload="MM_preloadImages('/academy/images/global_home_on.gif','/academy/images/global_login_on.gif','/academy/images/global_sitemap_on.gif','/academy/images/global_contact_on.gif','/academy/images/main_quick_recruit_on.gif','/academy/images/main_quick_cb_on.gif','/academy/images/main_quick_lecture_on.gif','/academy/images/main_quick_brochure_on.gif','/academy/images/search_go_on.gif','/academy/images/main_quick_01_on.gif','/academy/images/main_quick_02_on.gif','/academy/images/main_quick_03_on.gif','/academy/images/main_quick_04_on.gif','/academy/images/main_quick_05_on.gif','/academy/images/main_quick_06_on.gif','/academy/images/main_news_tap1_on.gif','/academy/images/main_news_tap2_on.gif','/academy/images/left_02_01_on.gif','/academy/images/left_02_02_on.gif','/academy/images/left_02_03_on.gif','/academy/images/left_02_04_on.gif','/academy/images/left_02_05_on.gif','/academy/images/left_02_06_on.gif','/academy/images/left_02_07_on.gif','/academy/images/left_02_08_on.gif');">
+<div id="Layer1" style="position: absolute; left: 690px; top: 18px; width: 235px; height: 20px; z-index: 1;">
+  <table border="0" cellpadding="0" cellspacing="0" height="29" width="249">
+    <tbody><tr>
+      <td class="bg_repeat_no" background="EmbeddedC_files/global_bg.gif"><table align="center" border="0" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+          <td><a href="http://mdstec.com/academy" onmouseover="MM_swapImage('global1','','/academy/images/global_home_on.gif',1)" onmouseout="MM_swapImgRestore()"><img src="EmbeddedC_files/global_home.gif" name="global1" id="global1" border="0"></a></td>
+          <td align="center" width="15"><img src="EmbeddedC_files/global_div.gif"></td>
+          <td><a href="http://mdstec.com/academy/member/login.html?url=%2Facademy%2Fprograms%2Flecture.html%3Fuid%3D1246%26special%3DN" onmouseover="MM_swapImage('global2','','/academy/images/global_login_on.gif',1)" onmouseout="MM_swapImgRestore()"><img src="EmbeddedC_files/global_login.gif" name="global2" id="global2" border="0"></a></td>
+          <td align="center" width="15"><img src="EmbeddedC_files/global_div.gif"></td>
+          <td><a href="http://mdstec.com/academy/support/mystudy.html" onmouseover="MM_swapImage('global3','','/academy/images/global_mypage_on.gif',1)" onmouseout="MM_swapImgRestore()"><img src="EmbeddedC_files/global_mypage.gif" name="global3" id="global3" border="0"></a></td>
+          <td align="center" width="15"><img src="EmbeddedC_files/global_div.gif"></td>
+          <td><a href="http://mdstec.com/academy/sitemap" onmouseover="MM_swapImage('global4','','/academy/images/global_sitemap_on.gif',1)" onmouseout="MM_swapImgRestore()"><img src="EmbeddedC_files/global_sitemap.gif" name="global4" id="global4" border="0"></a></td>
+          <td align="center" width="15"><img src="EmbeddedC_files/global_div.gif"></td>
+          <td><a href="http://mdstec.com/academy/support/contact.html" onmouseover="MM_swapImage('global5','','/academy/images/global_contact_on.gif',1)" onmouseout="MM_swapImgRestore()"><img src="EmbeddedC_files/global_contact.gif" name="global5" id="global5" border="0"></a></td>
+          </tr>
+      </tbody></table></td>
+    </tr>
+  </tbody></table>
+</div>
+<table border="0" cellpadding="0" cellspacing="0" width="950">
+  <tbody><tr>
+    <td colspan="2" height="10"></td>
+  </tr>
+  <tr>
+    <td width="10">&nbsp;</td>
+    <td><table border="0" cellpadding="0" cellspacing="0" width="940">
+      <tbody><tr>
+        <td><table align="center" border="0" cellpadding="0" cellspacing="0">
+          <tbody><tr>
+            <td><a href="http://mdstec.com/academy"><img src="EmbeddedC_files/top_logo.gif" border="0"></a></td>
+          </tr>
+          <tr>
+            <td height="26">&nbsp;</td>
+          </tr>
+        </tbody></table></td>
+        <td class="bg_repeat_no" align="left" background="EmbeddedC_files/main_menu_bg.gif" height="70" valign="top" width="745">				
+				<script language="javascript" src="EmbeddedC_files/runobj.js"></script>
+				<script language="javascript">
+					var str = "<object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0' width='745' height='70'>";
+               str += "<param name='movie' value='/academy/flash/main_menu.swf?pageNum=2'><param name='quality' value='high'><param name='wmode' value='transparent'>";
+          		str += "<embed src='/academy/flash/main_menu.swf?pageNum=2' quality='high' pluginspage='http://www.macromedia.com/go/getflashplayer' type='application/x-shockwave-flash' width='745' height='70'></embed></object>";
+					runobj(str);
+				</script><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" height="70" width="745"><param name="movie" value="/academy/flash/main_menu.swf?pageNum=2"><param name="quality" value="high"><param name="wmode" value="transparent"><embed src="EmbeddedC_files/main_menu.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" height="70" width="745"></object></td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+</tbody></table>
+<table border="0" cellpadding="0" cellspacing="0" width="950">
+  <tbody><tr>
+    <td valign="top" width="210"><table border="0" cellpadding="0" cellspacing="0" width="210">
+      <tbody><tr>
+        <td><img src="EmbeddedC_files/left_title_02.gif"></td>
+      </tr>
+      <tr>
+        <td height="10"></td>
+      </tr>
+      <tr>
+        <td><script language="JavaScript" type="text/JavaScript">
+<!--
+function restore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function findof(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findof(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function swap() { //v3.0
+  var i,j=0,x,a=swap.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=findof(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="188">
+	<tbody><tr>
+		<td><a href="http://mdstec.com/academy/programs/nclass.html" onmouseover="swap('left9','','/academy/images/left_02_01_on.gif',1)" onmouseout="restore()"><img src="EmbeddedC_files/undefined.html" name="left9" id="left9" rollover="/academy/images/left_02_01_on.gif" border="0"></a></td>
+	</tr>
+	<tr>
+		<td><a href="http://mdstec.com/academy/programs/sclass.html" onmouseover="swap('left10','','/academy/images/left_02_02_on.gif',1)" onmouseout="restore()"><img src="EmbeddedC_files/left_02_02.gif" name="left10" id="left10" rollover="/academy/images/left_02_02_on.gif" border="0" height="28" width="188"></a></td>
+	</tr>
+	<tr>
+	  <td><br>
+    <a href="http://mdstec.com/main" target="_blank"><img src="EmbeddedC_files/banner_sub.gif" border="0" height="92" width="188"></a></td>
+  </tr>
+</tbody></table>
+<script language="javascript">
+document.all.left9.src=document.all.left9.rollover;
+</script></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody></table></td>
+    <td valign="top"><table border="0" cellpadding="0" cellspacing="0" width="740">
+      <tbody><tr>
+        <td><img src="EmbeddedC_files/sub_top_02.gif"></td>
+      </tr>
+      <tr>
+        <td height="10"></td>
+      </tr>
+      <tr>
+        <td><table align="center" border="0" cellpadding="0" cellspacing="0" width="720">
+          <tbody><tr>
+            <td><img src="EmbeddedC_files/title_02_01.gif"></td>
+            <td valign="bottom"><table align="right" border="0" cellpadding="1" cellspacing="0">
+              <tbody><tr>
+                <td class="t_small_03">Home :  교육 과정 : </td>
+                <td class="page_on"> 일반강좌 </td>
+              </tr>
+            </tbody></table></td>
+          </tr>
+          <tr bgcolor="#cccccc">
+            <td colspan="2" height="1"></td>
+            </tr>
+          <tr>
+            <td colspan="2">&nbsp;</td>
+            </tr>
+        </tbody></table></td>
+      </tr>
+      <tr>
+        <td align="center"><table border="0" cellpadding="0" cellspacing="0" width="98%">
+  <tbody><tr>
+    <td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody><tr>
+          <td colspan="8" bgcolor="#cccccc" height="3"></td>
+        </tr>
+        <tr>
+          <td bgcolor="#fffff4" width="30"><img src="EmbeddedC_files/bullet_gray.gif" height="28" width="20"></td>
+          <td bgcolor="#fffff4" width="60">과정코드</td>
+          <td width="15">:</td>
+          <td colspan="5" class="titleProgram">MA-101</td>
+        </tr>
+        <tr>
+          <td colspan="8" background="EmbeddedC_files/dot_line.gif" height="1"></td>
+        </tr>				
+        <tr>
+          <td bgcolor="#fffff4" width="30"><img src="EmbeddedC_files/bullet_gray.gif" height="28" width="20"></td>
+          <td bgcolor="#fffff4" width="60">과정명</td>
+          <td width="15">:</td>
+          <td colspan="5" class="title_b">임베디드 C &amp; 코드 최적화 기법</td>
+        </tr>
+        <tr>
+          <td colspan="8" background="EmbeddedC_files/dot_line.gif" height="1"></td>
+        </tr>
+        <tr>
+          <td bgcolor="#fffff4"><img src="EmbeddedC_files/bullet_gray.gif" height="28" width="20"></td>
+          <td bgcolor="#fffff4">강사</td>
+          <td>:</td>
+          <td width="205"><a href="#">MDS전문강사</a></td>
+          <td bgcolor="#fffff4" width="30"><img src="EmbeddedC_files/bullet_gray.gif" height="28" width="20"></td>
+          <td bgcolor="#fffff4" width="60">담당자</td>
+          <td width="15">:</td>
+          <td width="205"><a href="mailto:yongjuncho@myware.mdstec.com">조용준</a> [Tel:02-2106-6026]</td>
+        </tr>
+        <tr>
+          <td colspan="8" background="EmbeddedC_files/dot_line.gif" height="1"></td>
+        </tr>
+        <tr>
+          <td bgcolor="#fffff4"><img src="EmbeddedC_files/bullet_gray.gif" height="28" width="20"></td>
+          <td bgcolor="#fffff4">교육기간</td>
+          <td>:</td>
+          <td colspan="5">5일(9:30~17:30) 이론50%, 실습50% </td>
+        </tr>
+        <tr>
+          <td colspan="8" background="EmbeddedC_files/dot_line.gif" height="1"></td>
+        </tr>
+        <tr>
+          <td bgcolor="#fffff4"><img src="EmbeddedC_files/bullet_gray.gif" height="28" width="20"></td>
+          <td bgcolor="#fffff4">교육비</td>
+          <td>:</td>
+					
+          <td colspan="5">\ 660,000 (VAT포함) 노동부환급과정</td>
+        </tr>
+        <tr>
+          <td colspan="8" background="EmbeddedC_files/dot_line.gif" height="1"></td>
+        </tr>
+        <tr>
+          <td bgcolor="#fffff4"><img src="EmbeddedC_files/bullet_gray.gif" height="28" width="20"></td>
+          <td bgcolor="#fffff4">교육일정</td>
+          <td>:</td>
+          <td colspan="5">
+<!--교육일정 테이블-->					
+					<table border="0" cellpadding="0" cellspacing="0">
+<!--반복 TR-->	
+		
+            <tbody><tr>
+              <td>3월 12일~3월 16일(서울 교육장) </td>
+              <td><a href="http://mdstec.com/academy/programs/apply.html?uid=1224&amp;special=N" onfocus="blur()"><img src="EmbeddedC_files/btn_apply.gif" border="0"></a></td>
+            </tr>
+		
+            <tr>
+              <td>4월 9일~4월 13일(서울 교육장) </td>
+              <td><a href="http://mdstec.com/academy/programs/apply.html?uid=1246&amp;special=N" onfocus="blur()"><img src="EmbeddedC_files/btn_apply.gif" border="0"></a></td>
+            </tr>
+						
+<!--반복 TR-->									
+          </tbody></table>
+<!--교육일정 테이블-->						
+					</td>
+        </tr>
+        <tr>
+          <td colspan="8" bgcolor="#dddddd" height="2"></td>
+        </tr>
+    </tbody></table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+          <td colspan="2" align="left"><table cellpadding="0" cellspacing="0" width="100%">
+              <tbody><tr>
+                <td colspan="2" align="right" height="22"><span onclick="javascript:if(hiddenTr.style.display=='none'){hiddenTr.style.display='';document.all.upNdown.value='▲';}else{hiddenTr.style.display='none';document.all.upNdown.value='▼';}" style="">
+                  <input value="▲" name="upNdown" type="button"> 교육과정 자세히 보기</span></td>
+              </tr>
+          </tbody></table>
+					</td>
+        </tr>		
+        <tr id="hiddenTr" style="">
+          <td colspan="2" align="left"><table cellpadding="0" cellspacing="0" width="100%">
+              <tbody><tr>
+                <td colspan="2" class="textBold">[ 교육내용 ]</td>
+              </tr>
+              <tr>
+                <td colspan="2"><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용-->
+<table bgcolor="#dddddd" cellpadding="5" cellspacing="1" width="100%">
+<tbody>
+<tr align="center" bgcolor="#e8eefd">
+<td width="100">시 간 </td>
+<td>주 요 내 용 </td>
+<td width="80">교육방법 </td></tr>
+<tr>
+<td align="center" bgcolor="#f1f1f1">1일차&nbsp;</td>
+<td bgcolor="#ffffff">1. C언어의 재정립<br>&nbsp; - Hello C World!와 printf(), 프로그램의 컴파일에서 실행까지<br>&nbsp; - 실습장비 및 컴파일러 사용법<br>&nbsp; - 메모리의 이해와 메모리 표현법<br>&nbsp; - 변수의 선언, 정의, 초기화와 modifier<br>&nbsp; - storage class, stack operation, 변수의 유효범위<br>&nbsp; - 함수의 호출과 리턴, conversion<br>&nbsp; - type casting<br>&nbsp; - preprocessing</td>
+<td bgcolor="#ffffff">&nbsp;이론/실습</td></tr>
+<tr>
+<td align="center" bgcolor="#f1f1f1">2일차</td>
+<td bgcolor="#ffffff">1. C언어의 재정립<br>&nbsp; - bit processing<br>&nbsp; - 연산자 활용과 주소연산<br>&nbsp; - branch 및 loop <br>2. 임베디드 C언어<br>&nbsp; - 주소처리 연산자와 변수의 무한확장 선언과 해석<br>&nbsp; - [ ]연산자와 메모리 구성, * 연산자와의 결합<br>&nbsp; - 다중 [ ] 연산자와 메모리 구성, * 연산자와의 결합<br>&nbsp; - ( ) 연산자, * 연산자와의 결합<br>&nbsp; - 복잡한 함수의 호출과 리턴, 재귀함수 호출</td>
+<td bgcolor="#ffffff">&nbsp;이론/실습</td></tr>
+<tr>
+<td align="center" bgcolor="#f1f1f1">3일차</td>
+<td bgcolor="#ffffff">2. 임베디드 C언어<br>&nbsp; - 구조체, 공용체와 * 연산자와의 결합, 자기참조 구조체<br>&nbsp; - PC 기반 C언와의 차이점, startup code<br>&nbsp; - memory layout과 heap 영역의 access<br>&nbsp; - [ ], * 연산자를 활용한 heap의 고급 활용<br>&nbsp; - ++, --, * 연산자를 활용한 memory access<br>&nbsp; - type qualifier (const, volatile)<br>3. 임베디드 시스템 최적화 프로그래밍<br>&nbsp; - 최적화의 이해와 개념<br>&nbsp; - 컴파일러에 의한 최적화&nbsp;</td>
+<td bgcolor="#ffffff">&nbsp;이론/실습</td></tr>
+<tr>
+<td align="center" bgcolor="#f1f1f1">4일차</td>
+<td bgcolor="#ffffff">3. 임베디드 시스템 최적화 프로그래밍<br>&nbsp; - 코드사이즈 최적화<br>&nbsp; - 메모리 layout과 운용의 최적화<br>&nbsp; - 실행시간의 최적화<br>&nbsp; - 조건 및 분기, Loop의 최적화<br>&nbsp; - 각종 변수의 선언과 속도 최적화<br>&nbsp; - 상수식과 preprocessing에 의한 최적화<br>&nbsp; - ATPCS에 의한 함수 운용 및 라이브러리 함수 최적화<br>&nbsp; - 선택과 집중: Overhead의 제거, Bottleneck의 제거</td>
+<td bgcolor="#ffffff">&nbsp;이론/실습</td></tr>
+<tr>
+<td align="center" bgcolor="#f1f1f1">5일차&nbsp;</td>
+<td bgcolor="#ffffff">4. 구조적 프로그래밍 및 미니프로젝트 수행<br>&nbsp; - Top level design의 개념, 구조적 프로그래밍과 모듈화 프로그래밍<br>&nbsp; - 프로젝트 기획과 상위 상태천이도의 작성<br>&nbsp; - 함수 기획 및 명세서 작성<br>&nbsp; - 디바이스 드라이버 계층 프로그램 설계<br>&nbsp; - 인터페이스 계층 프로그램 설계<br>&nbsp; - 응용계층 프로그램 설계<br>&nbsp; - 디버깅 및 프로젝트 완료<br>&nbsp; - 과정요약 및 과정정리</td>
+<td bgcolor="#ffffff">&nbsp;이론/실습</td></tr></tbody></table><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--><!--기본 출력 내용--></td>
+              </tr>
+          </tbody></table>※ 단, 교육 내용은 교육의 질적 향상을 위해 사전 예고 없이 변경될 수 있습니다.<br><br>
+
+
+</td>
+        </tr>
+	
+        <tr>
+          <td colspan="2" background="EmbeddedC_files/line_bg.gif"><table bgcolor="#ffffff" border="0" cellpadding="2" cellspacing="0">
+            <tbody><tr>
+              <td><img src="EmbeddedC_files/num_1.gif"></td>
+              <td class="textBold">과정개요</td>
+            </tr>
+          </tbody></table></td>
+        </tr>
+        <tr align="left">
+          <td width="26">&nbsp;</td>
+          <td style="width: 95%;" align="left" valign="top">기
+존에 가정이나 산업용 전자제품들은 독립적 기능 수행을 위한 제품으로 개발되었으나 오늘날에는 고도의 지능을 가지고 인터넷 접속을
+통한 네트워크로 다른 시스템들과 유기적인 관계를 맺는 임베디드 시스템으로 구현되는 추세입니다. 또한 마이크로프로세서나 마이컴은
+점차 고성능, 다기능, 저가화 되어 임베디드 프로세서로 통합되고 있습니다. 이러한 시대의 흐름은 우리가 꿈꾸는 유비쿼터스 세상의
+실현을 앞당기고 있습니다.<br>
+<br>
+임베디드 시스템은 PC기반 시스템에 비해 동작오류방지, 가격, 성능 최적화를 더욱 중요시하며 성능대비 제품 크기는 점차
+소형화되고 있는 상황입니다. 이러한 변화에 따라 하드웨어, 소프트웨어 엔지니어로 구분되던 기존의 분류는 임베디드 엔지니어,
+PC기반 엔지니어, SI 엔지니어로 구분되고 있으며 임베디드 엔지니어의 역할은 매우 커지고 있는 상황입니다.<br>
+<br>
+기존의 많은 하드웨어 및 소프트웨어 엔지니어들이 임베디드 엔지니어로서의 성공을 희망하고 있으나 고급 임베디드 엔지니어가 되기
+위하여는 명료하고 정확한 이론에 근거한 임베디드 C언어와 시스템의 최적화를 이루기 위한 기법 그리고 Top-Down 설계 방식에
+의한 상위레벨 설계 기법의 정확한 이해가 필수적으로 필요합니다.</td>
+        </tr>
+        <tr>
+          <td colspan="2" height="10"></td>
+        </tr>
+        <tr>
+          <td colspan="2" background="EmbeddedC_files/line_bg.gif"><table bgcolor="#ffffff" border="0" cellpadding="2" cellspacing="0">
+            <tbody><tr>
+              <td><img src="EmbeddedC_files/num_2.gif" height="24" width="23"></td>
+              <td class="textBold">교육목적</td>
+            </tr>
+          </tbody></table></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td align="left" valign="top">⊙ 실행오류 방지와 디버깅 편의성 증대를 위한 C언어 문법의 재정립<br>
+⊙ 임베디드 C언어의 고급 활용기법의 습득<br>
+⊙ C에서의 사이즈, 속도, 메모리 최적화 기법의 이해<br>
+⊙ 최적화 프로그래밍 기법 이해<br>
+⊙ 구조적 프로그래밍 기법 이해</td>
+        </tr>
+        <tr>
+          <td colspan="2" height="10"></td>
+        </tr>
+        <tr>
+          <td colspan="2" background="EmbeddedC_files/line_bg.gif"><table bgcolor="#ffffff" border="0" cellpadding="2" cellspacing="0">
+            <tbody><tr>
+              <td><img src="EmbeddedC_files/num_3.gif"></td>
+              <td class="textBold">교육대상</td>
+            </tr>
+          </tbody></table></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td align="left" valign="top">⊙ 고급프로그래머가 되기 위해 C언어를 공부하는 학생 및 엔지니어<br>
+⊙ C언어를 이용한 ARM기반 시스템 개발에 관심이 있는 학생 및 엔지니어<br>
+⊙ 디바이스 드라이버를 개발하는 Firmware엔지니어<br>
+⊙ 상위 응용프로그램 개발하는 Software엔지니어</td>
+        </tr>
+        <tr>
+          <td colspan="2" height="10"></td>
+        </tr>
+        <tr>
+          <td colspan="2" background="EmbeddedC_files/line_bg.gif"><table bgcolor="#ffffff" border="0" cellpadding="2" cellspacing="0">
+            <tbody><tr>
+              <td><img src="EmbeddedC_files/num_4.gif"></td>
+              <td class="textBold">선수지식</td>
+            </tr>
+          </tbody></table></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td align="left" valign="top">C언어</td>
+        </tr>
+        <tr>
+          <td colspan="2" height="10"></td>
+        </tr>
+        <tr>
+          <td colspan="2" background="EmbeddedC_files/line_bg.gif"><table bgcolor="#ffffff" border="0" cellpadding="2" cellspacing="0">
+            <tbody><tr>
+              <td><img src="EmbeddedC_files/num_5.gif"></td>
+              <td class="textBold">연결과목</td>
+            </tr>
+          </tbody></table></td>
+        </tr>
+        <tr>
+          <td colspan="2"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+							
+          </table></td>
+        </tr>
+        <tr>
+          <td colspan="2" height="10"></td>
+        </tr>								
+        <tr>
+          <td colspan="2" background="EmbeddedC_files/line_bg.gif"><table bgcolor="#ffffff" border="0" cellpadding="2" cellspacing="0">
+            <tbody><tr>
+              <td><img src="EmbeddedC_files/num_6.gif"></td>
+              <td class="textBold">교육내용</td>
+            </tr>
+          </tbody></table></td>
+        </tr>
+        <tr align="left">
+          <td>&nbsp;</td>
+          <td valign="top">⊙ C언어의 재정립(이론, 실습)<br>
+⊙ 임베디드 C언어(이론, 실습)<br>
+⊙ 임베디드 시스템 최적화 프로그래밍(이론, 실습)<br>
+⊙ 구조적 프로그래밍 및 미니프로젝트 수행(이론, 실습)<br>
+</td>
+        </tr>
+        <tr>
+          <td colspan="2" height="10"></td>
+        </tr>
+        <tr>
+          <td colspan="2" background="EmbeddedC_files/line_bg.gif"><table bgcolor="#ffffff" border="0" cellpadding="2" cellspacing="0">
+            <tbody><tr>
+              <td><img src="EmbeddedC_files/num_7.gif" height="24" width="23"></td>
+              <td class="textBold">교육 소감문 </td>
+            </tr>
+          </tbody></table></td>
+        </tr>
+							
+        <tr>
+          <td align="left">&nbsp;</td>
+          <td><table border="0" cellpadding="5" cellspacing="0" width="100%">
+            <tbody><tr>
+              <td class="t_bold_02">ETRI 연구원</td>
+            </tr>
+            <tr>
+              <td bgcolor="#f3f3f3">C
+에 대한 어렴풋한 기억과 교육후 바로 실전에 적용해야한다는 부담감을 안고 교육과정에 입문하였다. 예상대로 쉽지않은 내용들이었지만
+강사님의 친절하고 명석한 수업으로 약간씩 감이 생기기 시작했다. 본 과정을 통해서 최적화를 위해 어떤 것들이 중요한지를 알게
+되었고, 그러한 것들을 실전에 옮기기 위해서는 지속적인 탐구가 필요하다는 생각을 하게 되었다. 훌륭한 과정을 마련해주신 MDS
+아카데미 관계자들과 과정을 따라갈 수 있도록 물심양면 도와주신 강사님께 깊은 감사 드리며 앞으로도 업무에 필요한 교육 과정을
+개발해주었으면 싶다.</td>
+            </tr>
+          </tbody></table></td>
+        </tr>
+        <tr>
+          <td align="left">&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+							
+        <tr>
+          <td align="left">&nbsp;</td>
+          <td><table border="0" cellpadding="5" cellspacing="0" width="100%">
+            <tbody><tr>
+              <td class="t_bold_02">삼성전자 연구원</td>
+            </tr>
+            <tr>
+              <td bgcolor="#f3f3f3">현
+업개발자도 혼돈하기 쉬운 배열과 다중포인터, 함수와 문자열상수에 대한 부분을 ‘깡통이론’으로 쉽게 풀어서 설명하기 때문에 이해가
+빠를 뿐만 아니라, 시간이 지난 다음에도 결코 잊어버리지 않는 장점이 있었다. 임베디드 FirmWare 현업개발에서 사용하는
+소스를 실습예제로 사용함으로써 C언어를 공부하면서 자연스럽게 임베디드 프로그래밍을 구현할 수 있는 기술을 습득함은 물론,
+S/W와 관련된 H/W지식까지 배울 수 있었다. <br>
+</td>
+            </tr>
+          </tbody></table></td>
+        </tr>
+        <tr>
+          <td align="left">&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+							
+        <tr>
+          <td align="left">&nbsp;</td>
+          <td><table border="0" cellpadding="5" cellspacing="0" width="100%">
+            <tbody><tr>
+              <td class="t_bold_02">KAIST 연구원</td>
+            </tr>
+            <tr>
+              <td bgcolor="#f3f3f3">10
+년이상의 임베디드 개발경험을 가지신 전문강사님의 C언어 최적화 기법을 습득할 수 있는 좋은 기회였다. 실행파일 크기를 줄이는
+방법과 실행시간을 줄이는 방법을 Case by Case로 살펴봄으로써, 임베디드시스템에서 응용될 수 있는 다양한 프로그램 최적화
+기법을 익힐 수 있으며, 현업에서도 응용하여 사용할 수 있다. 그리고 현업에서 제일 많이 사용하고 있는 ARM
+Processor를 기반으로 하여 최적화 하는 기법을 소개함은 물론, 실습소스를 CD형태로 보급하기 때문에 현업에서 편리하고
+유용한 소스로 사용될 수 있는 장점이 있다. <br>
+</td>
+            </tr>
+          </tbody></table></td>
+        </tr>
+        <tr>
+          <td align="left">&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="2" height="10"></td>
+        </tr>				
+    </tbody></table></td>
+  </tr>
+  <tr>
+    <td background="EmbeddedC_files/dot_line.gif" height="1"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</tbody></table>
+				</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+</tbody></table>
+<table border="0" cellpadding="0" cellspacing="0" width="950">
+  <tbody><tr>
+    <td width="10">&nbsp;</td>
+    <td><table border="0" cellpadding="0" cellspacing="0" width="940">
+      <tbody><tr>
+        <td align="left" width="15"><img src="EmbeddedC_files/foot_left.gif"></td>
+        <td background="EmbeddedC_files/foot_bg.gif" width="100%"><img src="EmbeddedC_files/foot_copyright.gif"></td>
+        <td background="EmbeddedC_files/foot_bg.gif"><img src="EmbeddedC_files/foot_familysite.gif"></td>
+        <td align="right" background="EmbeddedC_files/foot_bg.gif"><select name="selectm" onchange="window.open(document.all.selectm.options[document.all.selectm.options.selectedIndex].value,'site');">
+          <option selected="selected">::: Site를 선택하세요 :::</option>
+					<option value="http://mdstec.com">MDS테크놀로지</option>
+          <option value="http://arm.co.kr">삼성32bit Solution Partner</option>          
+        </select></td>
+        <td align="right" width="15"><img src="EmbeddedC_files/foot_right.gif"></td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+</tbody></table>
+<br>
+<br>
+<!-- 웹로그분석 -->
+<!-- LOGGER SCRIPT FOR SETTING ENVIRONMENT V.27 :  / FILL THE VALUE TO SET. -->
+<!-- COPYRIGHT (C) 2002-2006 BIZSPRING INC. LOGGER(TM) ALL RIGHTS RESERVED. -->
+<script language="JavaScript">
+/* FOR BIZ., COM. AND ENT. SERVICE. */
+_TRK_CP = ""; /* Contents Path */
+</script>
+<!-- END OF ENVIRONMENT SCRIPT -->
+
+<!-- LOGGER TRACKING SCRIPT V.30 FOR www.mdstec.com / 3767 : FAIL-SAFE TYPE / DO NOT ALTER THIS SCRIPT. -->
+<!-- COPYRIGHT (C) 2002-2006 BIZSPRING INC. LOGGER(TM) ALL RIGHTS RESERVED. -->
+<script language="JavaScript">/* LOGGER TRACKING SCRIPT V.30 : 3767 *//*X*//* COPYRIGHT 2002-2006 BIZSPRING INC. *//*X*//* DO NOT MODIFY THIS SCRIPT. *//*X*/var _TRK_DOMAIN="logger.co.kr";var _trk_bMSIE=(document.all)?true:false;var _trk_bJS12=(window.screen)?true:false;function _trk_escape(_str) { var str, ch; var bEncURI = "N"; eval("try{bEncURI=encodeURI('Y');}catch(_e){ }" ); if( bEncURI == "Y" ) str=encodeURI(_str); else str = escape(_str); str=str.split("+").join("%2B"); str=str.split("/").join("%2F"); str=str.split("&").join("%26"); str=str.split("?").join("%3F"); str=str.split(":").join("%3A"); str=str.split("#").join("%23"); return str;}function _trk_setCookie(name,value,expire) { var today=new Date(); today.setTime(today.getTime()+ expire ); document.cookie=name+"="+value+"; path=/; expires="+today.toGMTString()+";";}function _trk_getCookie(name) { var cookieName=name+"="; var x=0; while(x<=document.cookie.length) { var y=(x+cookieName.length); if(document.cookie.substring(x,y)==cookieName) {  if((endOfCookie=document.cookie.indexOf(";",y))==-1) endOfCookie=document.cookie.length;  return unescape(document.cookie.substring(y,endOfCookie)); } x=document.cookie.indexOf(" ",x)+1; if(x == 0) break; } return "";}function _trk_getParameter(name) { var paraName=name+"="; var URL=""+self.document.location.search; var tURL=""; eval("try{ tURL=top.document.location.search; }catch(_e){}"); URL=URL+"&"+tURL; if(URL.indexOf(paraName)!=-1) { var x=URL.indexOf(paraName)+paraName.length; var y=URL.substr(x).indexOf("&"); if(y!=-1) return URL.substring(x,x+y); else return URL.substr(x); } return "";}function _trk_make_code(_TRK_SERVER,_TRK_U) { var dt=document.title.toString(); dt=dt.substr(0,128); var dr=self.document.referrer; var tdr=""; eval("try{ tdr=top.document.referrer; }catch(_e){}"); var tdu=""; eval("try{ tdu=top.document.location.href; }catch(_e){}"); var bFrm=false; if(dr==tdu) { dr=tdr; bFrm=true; } if(dr=="undefined") dr=""; var du=self.document.location.href; if(du.substr(0,4)=="file") return ""; var adKeyVal = ""; if(bFrm) { adKeyVal=_trk_getParameter("OVKEY"); if(adKeyVal!="" && du.indexOf("OVKEY=")<0) {  if(du.indexOf("?")!=-1) du=du+"&OVKEY="+adKeyVal; else du=du+"?OVKEY="+adKeyVal;  adKeyVal=_trk_getParameter("OVRAW");  if(adKeyVal!="" && du.indexOf("OVRAW=")<0 ) if(du.indexOf("?")!=-1) du=du+"&OVRAW="+adKeyVal; else du=du+"?OVRAW="+adKeyVal; } else {  adKeyVal=_trk_getParameter("netpia");  if(adKeyVal!="" && du.indexOf("netpia=")<0 ) if(du.indexOf("?")!=-1) du=du+"&netpia="+adKeyVal; else du=du+"?netpia="+adKeyVal; } adKeyVal=_trk_getParameter("logger_kw"); if(adKeyVal!="" && du.indexOf("logger_kw=")<0 )  if(du.indexOf("?")!=-1) du=du+"&logger_kw="+adKeyVal; else du=du+"?logger_kw="+adKeyVal; adKeyVal=_trk_getParameter("source"); if(adKeyVal!="" && du.indexOf("source=")<0 )  if(du.indexOf("?")!=-1) du=du+"&source="+adKeyVal; else du=du+"?source="+adKeyVal; } var ce=navigator.cookieEnabled?"Y":"N"; var je=navigator.javaEnabled()?"Y":"N"; var ss=""; var cd = ""; if(_trk_bJS12) { ss=screen.width+"x"+screen.height; cd=screen.colorDepth; } if(!dt) dt=""; if(!dr) dr=""; if(!du) du=""; if(!ce) ce=""; if(!je) je=""; var t = new Date; var tye=(_trk_bMSIE)?(t.getYear()):(t.getFullYear()); var tmo=t.getMonth()+1; var tda=t.getDate(); var tho=t.getHours(); var tmi=t.getMinutes(); var tse=t.getSeconds(); var tzo=t.getTimezoneOffset(); var tc = ""; var prtcl=document.location.protocol.indexOf("https")!=-1?"https://":"http://"; if(prtcl=="https://") _TRK_SERVER="ssl."+_TRK_DOMAIN; tc=tc+prtcl+_TRK_SERVER; var bPNF=((typeof _TRK_PI)!="undefined" && _TRK_PI=="PNF")?true:false; if(bPNF) tc=tc+"/tracker_click.tsp"; else tc=tc+"/tracker.tsp"; tc=tc+"?u="+_TRK_U+"&XU=&EXEN="+_EXEN; if(bPNF) { tc=tc+"&rnd="+Math.random()+"&CKFL="+_TRK_PI+"&CKDATA="+_trk_escape(du); } else { tc=tc+"&dr="+_trk_escape(dr)+"&XDR="+"&dt="+_trk_escape(dt)+"&du="+_trk_escape(du); if((typeof _TRK_CP)!="undefined" && _TRK_CP!="") tc=tc+"&CP="+_trk_escape(_TRK_CP)+"&XCP="; if((typeof _TRK_PI)!="undefined" && _TRK_PI!="") tc=tc+"&PI="+_TRK_PI; if((typeof _TRK_PN)!="undefined" && _TRK_PN!="") tc=tc+"&PN="+_trk_escape(_TRK_PN); if((typeof _TRK_MF)!="undefined" && _TRK_MF!="") tc=tc+"&MF="+_trk_escape(_TRK_MF); if((typeof _TRK_OA)!="undefined" && _TRK_OA!="") tc=tc+"&OA="+_TRK_OA; if((typeof _TRK_OP)!="undefined" && _TRK_OP!="") tc=tc+"&OP="+_trk_escape(_TRK_OP); if((typeof _TRK_OE)!="undefined" && _TRK_OE!="") tc=tc+"&OE="+_TRK_OE; if((typeof _TRK_CC)!="undefined" && _TRK_CC!="") tc=tc+"&CC="+_TRK_CC; if((typeof _TRK_RK)!="undefined" && _TRK_RK!="") tc=tc+"&RK="+_trk_escape(_TRK_RK); if((typeof _TRK_SX)!="undefined" && _TRK_SX!="") tc=tc+"&SX="+_TRK_SX; if((typeof _TRK_AG)!="undefined" && _TRK_AG!="") tc=tc+"&AG="+_TRK_AG; if((typeof _TRK_IK)!="undefined" && _TRK_IK!="") tc=tc+"&IK="+_trk_escape(_TRK_IK); tc=tc+"&js=Y"+"&ss="+escape(ss)+"&cd="+cd+"&ce="+ce+"&je="+je+"&tzo="+tzo+"&tye="+tye+"&tmo="+tmo+"&tda="+tda+"&tho="+tho+"&tmi="+tmi+"&tse="+tse; } return tc;}var _TRK_LIFE=_trk_getParameter("_L_");if(_TRK_LIFE=="") _TRK_LIFE=14;_TRK_LIFE = parseInt(_TRK_LIFE)*24*60*60*1000;var _TRK_U="";var _TRK_U_P=_trk_getParameter("_U_");var _TRK_U_C= _trk_getCookie("_TRK_U");if(_TRK_U_C!="") _TRK_U=_TRK_U_C;if(_TRK_U_P!="") _TRK_U=_TRK_U_P;if(_TRK_U!="" && _TRK_U_P!="") _trk_setCookie("_TRK_U",_TRK_U,_TRK_LIFE);var _TRK_CC_C=_trk_getCookie("_TRK_CC");var _TRK_CC_P=_trk_getParameter("_C_");if((typeof _TRK_CC)!="undefined" && _TRK_CC!="") _TRK_CC_P=_TRK_CC;if(_TRK_CC_C!="") _TRK_CC=_TRK_CC_C;if(_TRK_CC_P!="") _TRK_CC=_TRK_CC_P;if((typeof _TRK_CC)!="undefined" && _TRK_CC!="" && _TRK_CC_P!="") _trk_setCookie("_TRK_CC",_TRK_CC,_TRK_LIFE);var _TRK_RK_C=_trk_getCookie("_TRK_RK");var _TRK_RK_P=_trk_getParameter("_R_");if((typeof _TRK_RK)!="undefined" && _TRK_RK!="") _TRK_RK_P=_TRK_RK;if(_TRK_RK_C!="") _TRK_RK=_TRK_RK_C;if(_TRK_RK_P!="") _TRK_RK=_TRK_RK_P;if((typeof _TRK_RK)!="undefined" && _TRK_RK!="" && _TRK_RK_P!="") _trk_setCookie("_TRK_RK",_TRK_RK,_TRK_LIFE);var _SS_LIFE = 30*60*1000;var _EXEN = _trk_getCookie("_EXEN");if( _EXEN == "" ) _EXEN = 0; _EXEN ++;_trk_setCookie("_EXEN",_EXEN,_SS_LIFE);var _trk_code_base=_trk_make_code("trk12.logger.co.kr","3767");var _trk_code_chan="";if(_TRK_U!="") _trk_code_chan=_trk_code_base.replace(/\?u=3767&XU=/g,"?u="+_TRK_U+"&XU=");var _trk_img_base=new Image();var _trk_img_chan=new Image();var _trk_img_base_click=new Image();var _trk_img_chan_click=new Image();if(_trk_bJS12==true) { if(_trk_bMSIE) { _trk_img_base.src=_trk_code_base; if(_TRK_U!="") _trk_img_chan.src=_trk_code_chan; } else { setTimeout("_trk_img_base.src=_trk_code_base;",1); if(_TRK_U!="") setTimeout("_trk_img_chan.src=_trk_code_chan;",1); }} else { if(_trk_bMSIE) document.write('<div style=\"display: none\">'); document.write('<img src=\"'+_trk_code_base+'\" height=\"0\" width=\"0\">'); if(_TRK_U!="") document.write('<img src=\"'+_trk_code_chan+'\" height=\"0\" width=\"0\">'); if(_trk_bMSIE) document.write('</div>');}function _trk_flashContentsView(_TRK_CP) { var _trk_code_flash=_trk_code_base; _trk_code_flash=_trk_code_flash.replace(/&CP=.*&XCP=/g,"&XCP="); _trk_code_flash=_trk_code_flash.replace(/&dr=.*&XDR=/g,"&XDR="); _trk_img_base_click.src=_trk_code_flash+"&dr=&CP="+_trk_escape(_TRK_CP)+"&rnd="+Math.random(); if(_TRK_U!="") { _trk_code_flash=_trk_code_flash.replace(/\?u=3767&XU=/g,"?u="+_TRK_U+"&XU="); _trk_img_chan_click.src=_trk_code_flash+"&dr=&CP="+_trk_escape(_TRK_CP)+"&rnd="+Math.random(); }}function _trk_clickTrace(_TRK_CKFL,_TRK_CKDATA) { var _trk_code_click=_trk_code_base.substr(0,_trk_code_base.indexOf("tracker.tsp")); _trk_code_click=_trk_code_click+"tracker_click.tsp?rnd="+Math.random()+"&CKFL="+_TRK_CKFL+"&CKDATA="+_trk_escape(_TRK_CKDATA); _trk_img_base_click.src=_trk_code_click+"&u=3767"; if(_TRK_U!="") _trk_img_chan_click.src=_trk_code_click+"&u="+_TRK_U;}function _trk_adClick( adSvr, svcCode, adCode ) { var ac = ""; var prtcl=document.location.protocol.indexOf("https")!=-1?"https://":"http://"; if(prtcl=="https://") adSvr="ssl."+_TRK_DOMAIN; ac=ac+prtcl+adSvr; _trk_img_base_click.src=ac+"/tracker_ad.tsp?u="+svcCode+"&mode=C&adCode="+adCode;}</script>
+<noscript><img src="http://trk12.logger.co.kr/tracker.tsp?u=3767&js=N" width=0 height=0></noscript>
+<!-- END OF LOGGER TRACKING SCRIPT -->
+
+</body></html>

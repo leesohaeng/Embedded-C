@@ -1,0 +1,10 @@
+/이소행개인폴더/임베디드관련/임베디드C과정/AndNArrayAddress/main.c: In function 'main':
+/이소행개인폴더/임베디드관련/임베디드C과정/AndNArrayAddress/main.c:17: warning: initialization from incompatible pointer type
+/이소행개인폴더/임베디드관련/임베디드C과정/AndNArrayAddress/main.c:17: warning: excess elements in scalar initializer
+/이소행개인폴더/임베디드관련/임베디드C과정/AndNArrayAddress/main.c:17: warning: (near initialization for 'p')
+/이소행개인폴더/임베디드관련/임베디드C과정/AndNArrayAddress/main.c:17: warning: excess elements in scalar initializer
+/이소행개인폴더/임베디드관련/임베디드C과정/AndNArrayAddress/main.c:17: warning: (near initialization for 'p')
+/이소행개인폴더/임베디드관련/임베디드C과정/AndNArrayAddress/main.c:17: warning: excess elements in scalar initializer
+/이소행개인폴더/임베디드관련/임베디드C과정/AndNArrayAddress/main.c:17: warning: (near initialization for 'p')
+/이소행개인폴더/임베디드관련/임베디드C과정/AndNArrayAddress/main.c: At top level:
+/이소행개인폴더/임베디드관련/임베디드C과정/AndNArrayAddress/main.c:32: error: parse error before ':' token

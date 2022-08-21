@@ -1,0 +1,12 @@
+/이소행개인폴더/임베디드관련/임베디드C과정/CalcAddress/main.c: In function 'main':
+/이소행개인폴더/임베디드관련/임베디드C과정/CalcAddress/main.c:11: warning: excess elements in scalar initializer
+/이소행개인폴더/임베디드관련/임베디드C과정/CalcAddress/main.c:11: warning: (near initialization for 'p')
+/이소행개인폴더/임베디드관련/임베디드C과정/CalcAddress/main.c:11: warning: excess elements in scalar initializer
+/이소행개인폴더/임베디드관련/임베디드C과정/CalcAddress/main.c:11: warning: (near initialization for 'p')
+/이소행개인폴더/임베디드관련/임베디드C과정/CalcAddress/main.c:11: warning: excess elements in scalar initializer
+/이소행개인폴더/임베디드관련/임베디드C과정/CalcAddress/main.c:11: warning: (near initialization for 'p')
+/이소행개인폴더/임베디드관련/임베디드C과정/CalcAddress/main.c:11: warning: excess elements in scalar initializer
+/이소행개인폴더/임베디드관련/임베디드C과정/CalcAddress/main.c:11: warning: (near initialization for 'p')
+/이소행개인폴더/임베디드관련/임베디드C과정/CalcAddress/main.c:12: warning: initialization from incompatible pointer type
+/이소행개인폴더/임베디드관련/임베디드C과정/CalcAddress/main.c: At top level:
+/이소행개인폴더/임베디드관련/임베디드C과정/CalcAddress/main.c:32: error: parse error before numeric constant

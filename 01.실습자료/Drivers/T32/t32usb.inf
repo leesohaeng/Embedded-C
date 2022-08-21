@@ -1,0 +1,245 @@
+;
+;     T32USB Setup INF file
+;     Copyright (C) Lauterbach Datentechnik GmbH 2001-2004
+;
+
+[Version]
+Signature="$CHICAGO$"
+Class="Trace32"
+ClassGUID="{74333263-C465-11CF-8056-444553540000}"
+Provider="Lauterbach"
+DriverVer=07/01/2004,5.2.1.2
+
+[SourceDisksNames]
+1="Trace 32 Installation CD",,,
+
+[SourceDisksFiles]
+T32USB.SYS=1,WINNT
+T32USBXP.SYS=1,WINXP
+T32USBNET.SYS=1,WINNET
+T32USBXPIA64.SYS=1,WINXPIA64
+T32USBNETIA64.SYS=1,WINNETIA64
+T32USBNETAMD64.SYS=1,WINNETAMD64
+
+[ClassInstall32.NT]
+AddReg=Trace32_class_addreg
+
+[Trace32_class_addreg]
+HKR,,,,"Trace32 Devices"
+
+[Manufacturer]
+"Lauterbach Datentechnik GmbH - Germany"=Lauterbach, NTX86.5.1, NTX86.5.2, NTIA64.5.1, NTIA64.5.2, NTAMD64
+
+;----- Device Sections -----
+; 98/ME/2K
+[Lauterbach]
+"Lauterbach System Controller Unit SCU-ETH/32"= T32Install, USB\VID_0897&PID_0001
+"Lauterbach PODBUS USB Controller"            = T32Install, USB\VID_0897&PID_0002
+"Lauterbach Unknown USB Device"               = T32Install, USB\VID_0897&PID_0003
+
+; XP x86
+[Lauterbach.NTX86.5.1]
+"Lauterbach System Controller Unit SCU-ETH/32"= T32InstallXPX86, USB\VID_0897&PID_0001
+"Lauterbach PODBUS USB Controller"            = T32InstallXPX86, USB\VID_0897&PID_0002
+"Lauterbach Unknown USB Device"               = T32InstallXPX86, USB\VID_0897&PID_0003
+
+; NET x86
+[Lauterbach.NTX86.5.2]
+"Lauterbach System Controller Unit SCU-ETH/32"= T32InstallNETX86, USB\VID_0897&PID_0001
+"Lauterbach PODBUS USB Controller"            = T32InstallNETX86, USB\VID_0897&PID_0002
+"Lauterbach Unknown USB Device"               = T32InstallNETX86, USB\VID_0897&PID_0003
+
+; XP ia64
+[Lauterbach.NTIA64.5.1]
+"Lauterbach System Controller Unit SCU-ETH/32"= T32InstallXPIA64, USB\VID_0897&PID_0001
+"Lauterbach PODBUS USB Controller"            = T32InstallXPIA64, USB\VID_0897&PID_0002
+"Lauterbach Unknown USB Device"               = T32InstallXPIA64, USB\VID_0897&PID_0003
+
+; NET ia64
+[Lauterbach.NTIA64.5.2]
+"Lauterbach System Controller Unit SCU-ETH/32"= T32InstallNETIA64, USB\VID_0897&PID_0001
+"Lauterbach PODBUS USB Controller"            = T32InstallNETIA64, USB\VID_0897&PID_0002
+"Lauterbach Unknown USB Device"               = T32InstallNETIA64, USB\VID_0897&PID_0003
+
+; NET AMD64
+[Lauterbach.NTAMD64]
+"Lauterbach System Controller Unit SCU-ETH/32"= T32InstallNETAMD64, USB\VID_0897&PID_0001
+"Lauterbach PODBUS USB Controller"            = T32InstallNETAMD64, USB\VID_0897&PID_0002
+"Lauterbach Unknown USB Device"               = T32InstallNETAMD64, USB\VID_0897&PID_0003
+
+;----- Destination Directories -----
+[DestinationDirs]
+DefaultDestDir=10,System32\Drivers
+T32USB_InfFiles=10,INF
+
+;----- Driver Installation for Win98 x86 -----
+[T32Install]
+AddReg=T32USB_AddReg2K98
+DelReg=T32USB_DelReg
+CopyFiles=T32USB_DriverFiles
+
+;----- Driver Installation for Win2K x86 -----
+[T32Install.NT]
+AddReg=T32USB_AddReg2K98
+DelReg=T32USB_DelReg
+DelFiles=T32USB_InfFiles
+CopyFiles=T32USB_DriverFiles
+
+[T32Install.NT.Services]
+AddService=T32USB,0x00000002,T32USB_AddService2K
+
+;----- Driver Installation for WinXP x86 -----
+[T32InstallXPX86.NT]
+AddReg=T32USB_AddRegXPX86
+DelReg=T32USB_DelReg
+DelFiles=T32USB_InfFiles
+CopyFiles=T32USB_DriverFilesXPX86
+
+[T32InstallXPX86.NT.Services]
+AddService=T32USB,0x00000002,T32USB_AddServiceXPX86
+
+;----- Driver Installation for WinNET x86 -----
+[T32InstallNETX86.NT]
+AddReg=T32USB_AddRegNETX86
+DelReg=T32USB_DelReg
+DelFiles=T32USB_InfFiles
+CopyFiles=T32USB_DriverFilesNETX86
+
+[T32InstallNETX86.NT.Services]
+AddService=T32USB,0x00000002,T32USB_AddServiceNETX86
+
+;----- Driver Installation for WinXP ia64 -----
+[T32InstallXPIA64.NT]
+AddReg=T32USB_AddRegXPIA64
+DelReg=T32USB_DelReg
+DelFiles=T32USB_InfFiles
+CopyFiles=T32USB_DriverFilesXPIA64
+
+[T32InstallXPIA64.NT.Services]
+AddService=T32USB,0x00000002,T32USB_AddServiceXPIA64
+
+;----- Driver Installation for WinNET ia64 -----
+[T32InstallNETIA64.NT]
+AddReg=T32USB_AddRegNETIA64
+DelReg=T32USB_DelReg
+DelFiles=T32USB_InfFiles
+CopyFiles=T32USB_DriverFilesNETIA64
+
+[T32InstallNETIA64.NT.Services]
+AddService=T32USB,0x00000002,T32USB_AddServiceNETIA64
+
+;----- Driver Installation for WinNET AMD64 -----
+[T32InstallNETAMD64.NT]
+AddReg=T32USB_AddRegNETAMD64
+DelReg=T32USB_DelReg
+DelFiles=T32USB_InfFiles
+CopyFiles=T32USB_DriverFilesNETAMD64
+
+[T32InstallNETAMD64.NT.Services]
+AddService=T32USB,0x00000002,T32USB_AddServiceNETAMD64
+
+;----- Service Section -----
+[T32USB_AddService2K]
+DisplayName    = "TRACE32 USB Driver"
+ServiceType    = %SERVICE_KERNEL_DRIVER%
+StartType      = %SERVICE_DEMAND_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+ServiceBinary  = %12%\T32USB.SYS
+
+[T32USB_AddServiceXPX86]
+DisplayName    = "TRACE32 USB Driver"
+ServiceType    = %SERVICE_KERNEL_DRIVER%
+StartType      = %SERVICE_DEMAND_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+ServiceBinary  = %12%\T32USBXP.SYS
+
+[T32USB_AddServiceNETX86]
+DisplayName    = "TRACE32 USB Driver"
+ServiceType    = %SERVICE_KERNEL_DRIVER%
+StartType      = %SERVICE_DEMAND_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+ServiceBinary  = %12%\T32USBNET.SYS
+
+[T32USB_AddServiceXPIA64]
+DisplayName    = "TRACE32 USB Driver"
+ServiceType    = %SERVICE_KERNEL_DRIVER%
+StartType      = %SERVICE_DEMAND_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+ServiceBinary  = %12%\T32USBXPIA64.SYS
+
+[T32USB_AddServiceNETIA64]
+DisplayName    = "TRACE32 USB Driver"
+ServiceType    = %SERVICE_KERNEL_DRIVER%
+StartType      = %SERVICE_DEMAND_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+ServiceBinary  = %12%\T32USBNETIA64.SYS
+
+[T32USB_AddServiceNETAMD64]
+DisplayName    = "TRACE32 USB Driver"
+ServiceType    = %SERVICE_KERNEL_DRIVER%
+StartType      = %SERVICE_DEMAND_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+ServiceBinary  = %12%\T32USBNETAMD64.SYS
+
+;----- Registry Section -----
+[T32USB_DelReg]
+HKLM,"SYSTEM\CurrentControlSet\Services\T32USB\Parameters","MaximumTransferSize"
+HKLM,"SYSTEM\CurrentControlSet\Services\T32USB\Parameters","DebugLevel"
+HKLM,"SYSTEM\CurrentControlSet\Services\T32USB\Parameters"
+
+[T32USB_AddReg2K98]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,T32USB.SYS
+
+[T32USB_AddRegXPX86]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,T32USBXP.SYS
+
+[T32USB_AddRegNETX86]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,T32USBNET.SYS
+
+[T32USB_AddRegXPIA64]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,T32USBXPIA64.SYS
+
+[T32USB_AddRegNETIA64]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,T32USBNETIA64.SYS
+
+[T32USB_AddRegNETAMD64]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,T32USBNETAMD64.SYS
+
+;----- Driver Files -----
+[T32USB_DriverFiles]
+T32USB.SYS
+
+[T32USB_DriverFilesXPX86]
+T32USBXP.SYS
+
+[T32USB_DriverFilesNETX86]
+T32USBNET.SYS
+
+[T32USB_DriverFilesXPIA64]
+T32USBXPIA64.SYS
+
+[T32USB_DriverFilesNETIA64]
+T32USBNETIA64.SYS
+
+[T32USB_DriverFilesNETAMD64]
+T32USBNETAMD64.SYS
+
+;----- INF Files -----
+[T32USB_InfFiles]
+T32USB.INF
+T32USB.PNF
+
+;----- Strings -----
+[Strings]
+SERVICE_KERNEL_DRIVER       = 0x00000001
+SERVICE_AUTO_START          = 0x00000002
+SERVICE_DEMAND_START        = 0x00000003
+SERVICE_ERROR_NORMAL        = 0x00000001
+
+

@@ -1,0 +1,1 @@
+elf2bin my_rom_bios.elf
