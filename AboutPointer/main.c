@@ -15,7 +15,7 @@ int main (int argc, const char * argv[]) {
 	printf("%X:%X:%X:%X:%d\n",b,b+1,b+2,b+3,sizeof(b)); // b의 주소, b+1의 주소
 	printf("%X:%X:%X:%X:%d\n",b[0],b[1],b[2],b[3],sizeof(b));  //b[0] b의 0번째 내용 b[0] = a1
 	printf("%X:%X:%X:%X:%d\n",c[0],c,&c,c+1,sizeof(c));
-	
+	// add code
 	printf("test\n");
     return 0;
 }
